@@ -190,4 +190,36 @@ body {
   grid-gap: 30px;
   margin-top: 100px;
 }
+.services .services-content .service{
+  display: flex;
+  margin-bottom: 40px;
+}
+@media (max-width: 767px){
+  .services .services-content .service{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.services .services-content i{
+  color: var(--main-color);
+  flex-basis: 60px ;
+}
+.services .services-content .service .text{
+  flex: 1;
+}
+.services .services-content .service .text h3{
+  margin: 0;
+}
+.services .services-content .service .text p{
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.services .services-content .service .image{
+  text-align: center;
+  position: relative;
+}
+.services .services-content .service .image::before{
+  content: "";
+}
 /* end services */
